@@ -14,3 +14,7 @@ multi = a*b
 print("La multiplicacion de",a,"*",b,"es: ", multi)
 divis = a/b
 print("La division de",a,"/",b,"es: ", divis)
+
+a = int(input("Ingresa un numero a:"))
+b = int(input("Ingresa un numero b:"))
+print("La suma de",a,"+",b,"es: ",a+b)
