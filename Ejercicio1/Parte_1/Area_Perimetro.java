@@ -37,7 +37,7 @@ class Area_Perimetro
                     {
                         System.out.println("Ingresa el valor en metros del lado del pentagono:");
                         lado1 = myObj.nextDouble();
-                        System.out.println("Ingresa el valor del apotema del pentagono:");
+                        System.out.println("Ingresa el valor en metros del apotema del pentagono:");
                         apotema = myObj.nextDouble();
 
                         Area = (((5*lado1)*apotema)/2)*10000;
@@ -72,7 +72,7 @@ class Area_Perimetro
                     {
                         System.out.println("Ingresa el valor en metros del lado pequeno del rectangulo:");
                         lado1 = myObj.nextDouble();
-                        System.out.println("Ingresa el valor del lado grande del rectangulo:");
+                        System.out.println("Ingresa el valor en metros del lado grande del rectangulo:");
                         lado2 = myObj.nextDouble();
 
                         Area = lado1*lado2*10000;
@@ -81,7 +81,11 @@ class Area_Perimetro
                         System.out.println("El area del cuadrado es: " + Area + " cm^2");
                         System.out.println("El perimetro del cuadrado es: " + Perimetro + " cm");
                     }
-                    case 5 -> System.exit(0);
+                    case 5 -> 
+                    {
+                        System.out.println("Saliendo del programa");
+                        System.exit(0);
+                    }
                     default -> System.out.println("Escoge una opcion dentro de lo requerido");
                 }
             } while (Option <= 5);
