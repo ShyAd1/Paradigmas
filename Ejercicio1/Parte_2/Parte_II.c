@@ -3,12 +3,15 @@
 
 int main()
 {
-    int array[] = {1, 0, 2, -2};
+    int array[] = {1, 0, 2, -2, 11, 7, 9, 8};
     int target = 9;
     int suma = 0;
-    for (int i = 0; i < 4; i++)
+
+    int tamano = sizeof(array) / sizeof(array[0]);
+
+    for (int i = 0; i < tamano; i++)
     {
-        for (int j = i + 1; j < 4; j++)
+        for (int j = i + 1; j < tamano; j++)
         {
             suma = array[i] + array[j];
             if (suma == target)
@@ -19,7 +22,7 @@ int main()
     }
     if (suma != target)
     {
-        printf("No hay elementos que cumplan la condicion.");
+        printf("No hay mas elementos que cumplan la condicion.");
     }
     return 0;
 }
