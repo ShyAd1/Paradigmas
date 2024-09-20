@@ -1,24 +1,25 @@
-
 dividendo = int(input("Ingrese el numero a dividir: "))
 divisor = int(input("Ingrese el numero que dividira: "))
-if divisor == 0:
-    print("No se puede divir entre 0")
-    divisor = int(input("Ingrese el numero que dividira: "))
-    
-aux = 0
+
 aux = dividendo
-cuenta = 0.0
+cociente = 0
 
 def contador():
-    global cuenta
-    cuenta += 1.0
+    global cociente
+    cociente += 1
 
-
-while dividendo >= 0:
-    dividendo = dividendo - divisor
-    if dividendo >= divisor or dividendo >= 0:
+def division(dividendo, divisor):
+    while divisor == 0:
+        print("No se puede divir entre 0")
+        divisor = int(input("Ingrese el numero que dividira: "))
+        
+    while dividendo >= divisor:
+        dividendo -= divisor
         contador()
-    else:
-        break
 
-print("La division por restas sucesivas de ", aux, "entre ", divisor, "es: ", cuenta)
+    return dividendo, divisor
+
+residuo, divisor = division(dividendo, divisor)
+
+print(f"La division por restas sucesivas de {aux} entre {divisor} es: {cociente}")
+print(f"El residuo es: {residuo}")
