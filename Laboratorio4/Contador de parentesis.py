@@ -1,4 +1,3 @@
-
 paren = 0
 def contadorParen():
     global paren
@@ -6,9 +5,9 @@ def contadorParen():
 
 def contador(arr):
     tamaño = len(arr)
-    if tamaño>=0 and tamaño<=3*(pow(10,4)):
-        for i in range(tamaño):
-            if arr[i]=="(" and arr[i+1]==")":
+    if 0 <= tamaño <= 3*(pow(10,4)):
+        for i in range(tamaño - 1):
+            if arr[i] == "(" and arr[i+1] == ")":
                 contadorParen()
     print(paren)
 
