@@ -1,3 +1,5 @@
+package laboratorio6;
+
 import java.util.ArrayList;
 
 class Libro {
@@ -112,7 +114,10 @@ class Biblioteca {
         }
         return infoLibros.toString();
     }
+}
 
+public class Libreria
+{
     public static void main(String[] args) {
         Libro l1 = new Libro("La divina comedia", "Dante Alighieri", "1", "Disponible");
         Libro l2 = new Libro("Don quijote de la mancha", "Miguel de Cervantes", "2", "Prestado");

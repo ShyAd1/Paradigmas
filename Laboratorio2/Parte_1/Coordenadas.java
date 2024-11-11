@@ -1,6 +1,11 @@
+package parte_1;
+
 import java.util.Scanner;
-class Coordenadas{
-    public static void main(String [] args){
+
+class Coordenadas
+{
+    public static void main(String [] args)
+    {
         try (Scanner myObj = new Scanner(System.in)) 
         {
             int x, y;

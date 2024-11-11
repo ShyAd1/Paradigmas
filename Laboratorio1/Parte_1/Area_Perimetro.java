@@ -1,3 +1,5 @@
+package parte_1;
+
 import java.util.Scanner; 
 
 class Area_Perimetro

@@ -12,7 +12,7 @@ class Empleado {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+    
     public void setID(String ID) {
         this.ID = ID;
     }
