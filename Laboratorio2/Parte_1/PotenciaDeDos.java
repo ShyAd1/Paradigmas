@@ -2,7 +2,8 @@ package parte_1;
 
 import java.util.Scanner;
 
-public class PotenciaDeDos {
+public class PotenciaDeDos
+{
     public static void main(String[] args) {
         try(Scanner scanner = new Scanner(System.in))
         {

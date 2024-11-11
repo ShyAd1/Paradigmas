@@ -1,3 +1,5 @@
+package laboratorio7;
+
 class Empleado {
     private String nombre;
     private String ID;
