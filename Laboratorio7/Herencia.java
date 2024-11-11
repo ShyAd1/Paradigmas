@@ -97,7 +97,7 @@ class EmpleadoPorHoras extends Empleado {
     }
 }
 
-public class Main {
+public class Herencia {
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("Manuel", "34F24N51", 1500.0);
         EmpleadoTiempoCompleto ETC = new EmpleadoTiempoCompleto(empleado1);
