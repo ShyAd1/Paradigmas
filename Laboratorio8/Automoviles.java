@@ -1,4 +1,4 @@
-package Laboratorio8;
+package laboratorio8;
 
 abstract class Vehiculo {
     protected String Marca;
@@ -62,12 +62,60 @@ class Auto extends Vehiculo {
     }
 }
 
+class Motocicleta extends Vehiculo {
+
+    public Motocicleta(String Marca, String Modelo, int Año){
+        super(Marca, Modelo, Año);
+    }
+
+    @Override
+    public String encender(){
+        return "La motocicleta esta encendido";
+    }
+
+    @Override
+    public String apagar(){
+        return  "La motocicleta esta apagado";
+    }
+
+    @Override
+    public String describir(){
+        return "Esta es una motocicleta de marca: " + Marca + ", modelo: " + Modelo + ", del año: " + Año;
+    }
+}
+
+class Camion extends Vehiculo {
+
+    public Camion(String Marca, String Modelo, int Año){
+        super(Marca, Modelo, Año);
+    }
+
+    @Override
+    public String encender(){
+        return "El camion esta encendido";
+    }
+
+    @Override
+    public String apagar(){
+        return  "El camion esta apagado";
+    }
+
+    @Override
+    public String describir(){
+        return "Este es un camion de marca: " + Marca + ", modelo: " + Modelo + ", del año: " + Año;
+    }
+}
+
 public class Automoviles{
     public static void main(String[] args) {
-        Auto Auto1 = new Auto("Kya", "ria", 2024);
+        Auto Auto1 = new Auto("Kya", "Ria", 2024);
+        Motocicleta Moto1 = new Motocicleta("Yamaha", "Ténéré 700 Rally", 2024);
+        Camion Camion1 = new Camion("Isuzu", "ELF 100", 2024);
 
-        System.out.println(Auto1.encender());
-        System.out.println(Auto1.apagar());
-        System.out.println(Auto1.describir());
+        Vehiculo[] Automoviles = {Auto1,Moto1,Camion1};
+
+        for (Vehiculo Automovil : Automoviles) {
+            System.out.println(Automovil.describir());
+        }
     }
 }
